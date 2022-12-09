@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "590632532069",
+    "project_id": "portfioly",
+    "storage_bucket": "portfioly.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:590632532069:android:5476419db319c441aa2e8c",
+        "android_client_info": {
+          "package_name": "com.portfioly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "590632532069-v8lg8i4rbuq92ksj65csmo48t4j6h01j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMkwAXvwSYyPO1vaBKDAHIir0Ndnpb3Wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "590632532069-v8lg8i4rbuq92ksj65csmo48t4j6h01j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.LoginActivity">
+    <LinearLayout android:visibility="gone" android:id="@+id/loader_container" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent">
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/loader"
+            />
+    </LinearLayout>
+    <ScrollView android:id="@+id/form_container" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout
+            android:paddingVertical="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="100dp" android:layout_height="100dp" android:layout_gravity="center" android:layout_marginVertical="25dp" android:src="@drawable/logo" />
+            <TextView android:textColor="@color/text_primary" android:text="Welcome to Portfioly" android:textSize="22dp" android:layout_marginTop="10dp" android:textStyle="bold" android:textAllCaps="true" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textColor="@color/text_primary" android:text="Sign in to your account" android:textSize="19dp" android:layout_marginBottom="10dp" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.google.android.material.textfield.TextInputLayout app:startIconTint="@color/primary" android:layout_width="match_parent" android:layout_height="65dp" app:boxCornerRadiusBottomEnd="8dp" android:layout_marginHorizontal="15dp" android:layout_marginVertical="15dp" android:hint="Email" app:boxBackgroundColor="@color/white_1"  app:boxCornerRadiusBottomStart="8dp" app:boxCornerRadiusTopEnd="8dp" app:boxCornerRadiusTopStart="8dp" app:boxStrokeColor="@color/primary" app:boxStrokeWidth="0dp" app:boxStrokeWidthFocused="0dp" app:startIconDrawable="@drawable/login_mail_page" >
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/email" android:layout_width="match_parent" android:layout_height="65dp" android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout app:startIconTint="@color/primary" android:layout_marginHorizontal="15dp"  android:layout_width="match_parent" android:layout_height="65dp"  android:layout_marginVertical="15dp" android:hint="Password" app:boxBackgroundColor="@color/white_1" app:boxCornerRadiusBottomEnd="8dp" app:boxCornerRadiusBottomStart="8dp" app:boxCornerRadiusTopEnd="8dp" app:boxCornerRadiusTopStart="8dp" app:boxStrokeColor="@color/primary" app:boxStrokeWidth="0dp" app:boxStrokeWidthFocused="0dp" app:passwordToggleEnabled="true" app:startIconDrawable="@drawable/password_login_page">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/password" android:layout_width="match_parent" android:layout_height="65dp" android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+             <LinearLayout
+                 android:layout_marginVertical="5dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                 <TextView android:clickable="true" android:paddingLeft="15dp" android:layout_weight="1" android:id="@+id/contact_us" android:text="Contact Us" android:textSize="15dp" android:paddingVertical="8dp" android:paddingRight="16dp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                 <TextView android:clickable="true"  android:layout_weight="1" android:id="@+id/forgot_password" android:textAlignment="textEnd" android:text="Forgot Password" android:textSize="15dp" android:paddingVertical="8dp" android:paddingRight="16dp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+             </LinearLayout>
+            <com.google.android.material.button.MaterialButton android:id="@+id/login_button" android:layout_width="match_parent" android:layout_height="65dp" android:layout_marginVertical="10dp" android:layout_marginHorizontal="15dp" android:text="LOGIN" app:cornerRadius="8dp" android:textSize="15dp"/>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

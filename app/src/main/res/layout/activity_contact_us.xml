@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_secondry"
+    android:orientation="vertical"
+    tools:context=".Activity.ContactUsActivity">
+    <LinearLayout android:layout_width="match_parent" android:gravity="center_vertical" android:paddingTop="15dp" android:paddingBottom="5dp"
+        android:layout_height="85dp" android:orientation="horizontal" android:background="@drawable/background_element_type1">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/go_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="@color/background_secondry"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:shadowColor="@color/background_primary"
+            app:cornerRadius="5dp"
+            app:icon="@drawable/left__back_icon"
+            app:iconGravity="textStart"
+            app:iconSize="38dp"
+            app:iconPadding="0dp"
+            app:iconTint="@color/text_primary" />
+        <TextView
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="RESET PASSWORD"
+            android:textColor="@color/text_primary"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="2dp" />
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" />
+    </LinearLayout>
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout  app:startIconTint="@color/primary" android:id="@+id/fullNameContainer" android:layout_width="match_parent" android:layout_height="65dp" app:boxCornerRadiusBottomEnd="8dp" android:layout_marginHorizontal="15dp" android:layout_marginVertical="15dp" android:hint="Full Name" app:boxBackgroundColor="@color/background_primary"  app:boxCornerRadiusBottomStart="8dp" app:boxCornerRadiusTopEnd="8dp" app:boxCornerRadiusTopStart="8dp" app:boxStrokeColor="@color/primary" app:boxStrokeWidth="0dp" app:boxStrokeWidthFocused="0dp" >
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/full_name" android:layout_width="match_parent" android:layout_height="65dp" android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout app:startIconTint="@color/primary" android:id="@+id/emailContainer" android:layout_width="match_parent" android:layout_height="65dp" app:boxCornerRadiusBottomEnd="8dp" android:layout_marginHorizontal="15dp" android:layout_marginVertical="15dp" android:hint="Email" app:boxBackgroundColor="@color/background_primary"  app:boxCornerRadiusBottomStart="8dp" app:boxCornerRadiusTopEnd="8dp" app:boxCornerRadiusTopStart="8dp" app:boxStrokeColor="@color/primary" app:boxStrokeWidth="0dp" app:boxStrokeWidthFocused="0dp" >
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/email" android:layout_width="match_parent" android:layout_height="65dp" android:inputType="textEmailAddress"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout app:startIconTint="@color/primary"  android:id="@+id/subjectContainer" android:layout_width="match_parent" android:layout_height="65dp" app:boxCornerRadiusBottomEnd="8dp" android:layout_marginHorizontal="15dp" android:layout_marginVertical="15dp" android:hint="Subject" app:boxBackgroundColor="@color/background_primary"  app:boxCornerRadiusBottomStart="8dp" app:boxCornerRadiusTopEnd="8dp" app:boxCornerRadiusTopStart="8dp" app:boxStrokeColor="@color/primary" app:boxStrokeWidth="0dp" app:boxStrokeWidthFocused="0dp" >
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/subject" android:layout_width="match_parent" android:layout_height="65dp" android:inputType="text"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout app:startIconTint="@color/primary"  android:id="@+id/messageContainer" android:layout_width="match_parent" android:layout_height="145dp" app:boxCornerRadiusBottomEnd="8dp" android:layout_marginHorizontal="15dp" android:layout_marginVertical="15dp" android:hint="Message" app:boxBackgroundColor="@color/background_primary"  app:boxCornerRadiusBottomStart="8dp" app:boxCornerRadiusTopEnd="8dp" app:boxCornerRadiusTopStart="8dp" app:boxStrokeColor="@color/primary" app:boxStrokeWidth="0dp" app:boxStrokeWidthFocused="0dp" >
+                    <com.google.android.material.textfield.TextInputEditText  style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                         android:id="@+id/message" android:layout_width="match_parent" android:layout_height="145dp" android:overScrollMode="always" android:scrollbarStyle="insideInset" android:scrollbars="vertical"  android:inputType="textMultiLine"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/send_button" android:layout_width="match_parent"
+                    android:layout_height="75dp"  android:layout_marginHorizontal="15dp" android:text="send" app:cornerRadius="8dp" android:textSize="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

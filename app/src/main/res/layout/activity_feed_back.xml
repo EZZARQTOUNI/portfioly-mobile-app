@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_secondry"
+    android:orientation="vertical"
+    tools:context=".Activity.FeedBackActivity">
+    <LinearLayout android:layout_width="match_parent" android:gravity="center_vertical" android:paddingTop="15dp" android:paddingBottom="5dp"
+        android:layout_height="85dp" android:orientation="horizontal" android:background="@drawable/background_element_type1">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/go_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="@color/background_secondry"
+            android:insetLeft="0dp"
+            android:insetTop="0dp"
+            android:insetRight="0dp"
+            android:insetBottom="0dp"
+            android:shadowColor="@color/background_primary"
+            app:cornerRadius="5dp"
+            app:icon="@drawable/left__back_icon"
+            app:iconGravity="textStart"
+            app:iconSize="38dp"
+            app:iconPadding="0dp"
+            app:iconTint="@color/text_primary" />
+        <TextView
+            android:textAllCaps="true"
+            android:id="@+id/title_page"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="My Subscription"
+            android:textColor="@color/text_primary"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:padding="2dp" />
+        <ImageView android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="10dp" />
+    </LinearLayout>
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    android:layout_margin="15dp"
+                    app:cardCornerRadius="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:paddingTop="30dp"
+                        android:paddingHorizontal="25dp"
+                        android:paddingBottom="10dp"
+                        android:background="@drawable/feedback"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:layout_marginVertical="10dp"
+                            android:text="Have \nFeedBack?"
+                            android:textSize="30dp"
+                            android:layout_marginHorizontal="15dp"
+                            android:textStyle="bold"
+                            android:textColor="#fff"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="15dp"
+                            android:text="We would love to hear it "
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:layout_marginHorizontal="15dp"
+                            android:textColor="#fff"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <RatingBar
+                    android:id="@+id/feedback"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:numStars="5"
+                    android:rating="4.5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <com.google.android.material.textfield.TextInputLayout app:startIconTint="@color/primary"  android:layout_marginHorizontal="15dp"  android:layout_width="match_parent" android:layout_height="100dp"  android:layout_marginVertical="15dp"  android:hint="Message" app:boxBackgroundColor="@color/background_primary" app:boxCornerRadiusBottomEnd="8dp" app:boxCornerRadiusBottomStart="8dp" app:boxCornerRadiusTopEnd="8dp" app:boxCornerRadiusTopStart="8dp" app:boxStrokeColor="@color/primary" app:boxStrokeWidth="0dp" app:boxStrokeWidthFocused="0dp" >
+                    <com.google.android.material.textfield.TextInputEditText android:id="@+id/message" android:layout_width="match_parent" android:layout_height="100dp" android:inputType="textMultiLine"/>
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.button.MaterialButton android:id="@+id/save_button" android:layout_width="match_parent" android:layout_height="65dp" android:layout_marginVertical="10dp" android:layout_marginHorizontal="15dp" android:text="DONE" app:cornerRadius="8dp" android:textSize="15dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

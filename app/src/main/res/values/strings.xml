@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Portfioly</string>
+    <string name="title_home">Dashboard</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_statistic">Statistics</string>
+    <string name="title_mails">Mails</string>
+    <string name="title_profil">Profil</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="server">https://ezzarqtouni.tk/</string>
+    <string name="server_socket">ws://95.111.231.204:4001/</string>
+    <string name="err_500_title">Something worng </string>
+    <string name="err_500_message">Please contact us if you have the same problem</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
+
