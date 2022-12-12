@@ -101,7 +101,13 @@
                         android:fontFamily="sans-serif-light"
                         android:textSize="32sp"
                         android:textColor="@color/text_primary" android:textFontWeight="700" android:layout_marginBottom="15dp"/>
-                    <com.github.mikephil.charting.charts.LineChart android:id="@+id/linear_chart" android:layout_width="match_parent" android:layout_height="250dp" android:backgroundTint="@color/white"/>
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/linear_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        android:backgroundTint="@color/white"/>
+
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -133,7 +139,12 @@
                         android:fontFamily="sans-serif-light"
                         android:textSize="32sp"
                         android:textColor="@color/text_primary" android:textFontWeight="700" android:layout_marginBottom="15dp"/>
-                    <com.github.mikephil.charting.charts.BarChart  android:id="@+id/countries"  android:layout_width="match_parent" android:minHeight="300dp" android:layout_height="wrap_content" android:backgroundTint="@color/white"/>
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/countries"
+                        android:layout_width="match_parent"
+                        android:minHeight="300dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/white"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
@@ -165,7 +176,12 @@
                     android:fontFamily="sans-serif-light"
                     android:textSize="32sp"
                     android:textColor="@color/text_primary" android:textFontWeight="700" android:layout_marginBottom="15dp"/>
-                <com.github.mikephil.charting.charts.PieChart android:layout_width="match_parent" android:minHeight="280dp" android:layout_height="wrap_content" android:backgroundTint="@color/white" android:id="@+id/platform_view"/>
+                <com.github.mikephil.charting.charts.PieChart
+                    android:layout_width="match_parent"
+                    android:minHeight="280dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/platform_view"/>
             </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView

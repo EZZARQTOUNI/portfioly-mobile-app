@@ -77,12 +77,12 @@
                         android:textSize="23dp"
                         android:textColor="#fff"
                         android:textStyle="bold"/>
+
                     <com.github.lzyzsd.circleprogress.ArcProgress
                         android:id="@+id/percent_view"
                         android:layout_width="200dp"
                         android:layout_height="200dp"
                         app:arc_progress="55"
-
                         android:layout_marginTop="15dp"
                         app:arc_finished_color="#fff"
                         app:arc_text_color="#fff"
@@ -93,6 +93,7 @@
                         app:arc_bottom_text_size="15dp"
                         app:arc_suffix_text="%"
                         app:arc_bottom_text="STORAGE"/>
+
                     <LinearLayout
                         android:layout_marginTop="15dp"
                         android:orientation="horizontal"

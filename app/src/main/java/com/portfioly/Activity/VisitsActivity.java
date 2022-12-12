@@ -38,11 +38,14 @@ public class VisitsActivity extends AppCompatActivity {
         go_back = findViewById(R.id.go_back);
         go_back.setOnClickListener(e->{finish();});
             Helper.setTimout(()->{
+                int i = 0;
                 for(Visit v : visits){
+                    if(i==40) break;
                     createViewElement(v);
+                    i++;
                 }
             },1000);
-            Helper.setTimout(()->{ loaderContainer.setVisibility(View.GONE);},2500);
+            Helper.setTimout(()->{ loaderContainer.setVisibility(View.GONE);},3500);
     }
 
     public void createViewElement(Visit d){

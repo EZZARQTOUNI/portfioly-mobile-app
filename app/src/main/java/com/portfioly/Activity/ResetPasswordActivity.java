@@ -49,6 +49,9 @@ public class ResetPasswordActivity extends AppCompatActivity {
         text_reset = findViewById(R.id.text_reset);
         go_back = findViewById(R.id.go_back);
         go_back.setOnClickListener(e->{finish();});
+        codeContainer = findViewById(R.id.codeContainer);
+        passwordContainer = findViewById(R.id.passwordContainer);
+        ConfirmationContainer = findViewById(R.id.confirmationContainer);
         cancel.setOnClickListener(e->{
             email.setText("");
             cancel.setVisibility(View.GONE);
@@ -65,14 +68,14 @@ public class ResetPasswordActivity extends AppCompatActivity {
             Map<String,String> data = new HashMap<>();
             send.setEnabled(false);
             if(page==0){
-                email.setEnabled(false);
                 Boolean flag = true;
                 String emailText = email.getText().toString();
-                if(emailText.length()<4 || checkEmail(emailText)){
+                if(emailText.length()<4 || !checkEmail(emailText)){
                     email.setError("Please, Enter a valid Email");
                     flag = false;
                 }
                 if(flag){
+                    email.setEnabled(false);
                     data.put("email",emailText);
                     userService.RequestCodeForResset(data, new VolleyCallBack() {
                         @Override
@@ -93,13 +96,12 @@ public class ResetPasswordActivity extends AppCompatActivity {
 
                         @Override
                         public void onError(int error) {
-
+                            email.setEnabled(true);
+                            Toast.error(ResetPasswordActivity.this,"Invalid Email","please check the email that you provided to us");
                         }
 
                         @Override
-                        public void beforeSend() {
-
-                        }
+                        public void beforeSend() {}
 
                         @Override
                         public void onFinish() {
@@ -108,7 +110,6 @@ public class ResetPasswordActivity extends AppCompatActivity {
                     });
                 }
                 else send.setEnabled(true);
-
             }
             if(page==1){
                 String passwordText = password.getText().toString();
